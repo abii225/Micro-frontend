@@ -1,0 +1,3 @@
+
+    export type RemoteKeys = 'federation_provider\button' | 'federation_provider\navbar' | 'federation_provider\firstcontainer';
+    type PackageType<T> = T extends 'federation_provider\firstcontainer' ? typeof import('federation_provider\firstcontainer') :T extends 'federation_provider\navbar' ? typeof import('federation_provider\navbar') :T extends 'federation_provider\button' ? typeof import('federation_provider\button') :any;
